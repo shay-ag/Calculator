@@ -24,7 +24,7 @@ function App() {
   const updateCalculator = (value) => {
 
     if(
-      operations.includes(value) && calculation === '' || operations.includes(value) && operations.includes(calculation.slice(-1))
+      (operations.includes(value) && calculation === '') || (operations.includes(value) && operations.includes(calculation.slice(-1)))
     ){
       return;
     }
